@@ -1,10 +1,9 @@
 {
-  "title": "3D shapes",
-  "background": "https://ink-su.github.io/apl-factskill/skill/background.png",
-  "startImage": "https://ink-su.github.io/apl-factskill/skill/starting.png",
-  "logo": "https://ink-su.github.io/apl-factskill/skill/logo.png",
-  "welcome": "Welcome to 3d shapes. Learn about geometry.",
-  "description": "I can tell you about three dimensional shapes.",
-  "hint": "Try saying, \"Alexa, get me a shape\"",
-  "reprompt": "Ask me for another shape."
+  "title": "Steal of the week",
+  "background": "https://s3.amazonaws.com/dealsskillassets/main-background.jpg",
+  "dealbackground": "https://s3.amazonaws.com/dealsskillassets/deal_background.jpg",
+  "welcome": "Welcome to Amazing Deals. I have all the amazing deals that you would love to know about.",
+  "description": "I can tell you about deala you would like to steal.",
+  "hint": "Try saying, \"Tell me a deal\"",
+  "reprompt": "Ask me for another deal."
 }
