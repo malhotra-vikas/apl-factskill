@@ -3,7 +3,7 @@
   "background": "https://s3.amazonaws.com/dealsskillassets/main-background.jpg",
   "dealbackground": "https://s3.amazonaws.com/dealsskillassets/deal_background.jpg",
   "welcome": "Welcome to Amazing Deals. I have all the amazing deals that you would love to know about.",
-  "description": "I can tell you about deala you would like to steal.",
+  "description": "I can tell you about deal you would like to steal.",
   "hint": "Try saying, \"Tell me a deal\"",
   "reprompt": "Ask me for another deal."
 }

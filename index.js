@@ -15,16 +15,17 @@ const SessionEndedRequestHandler = {
 };
 
 exports.handler = Alexa.SkillBuilders.custom()
-  .addRequestHandlers(
-    LaunchRequestHandler,
-    HelpRequestHandler,
-    EventHandler,
-    CancelIntentHandler,
-    DealsRequestHandler,
-    YesDealsRequestHandler,
-    BuyDealsRequestHandler,
-    FallbackHandler,
-    ShapeRequestHandler,
-    SessionEndedRequestHandler
-  )
-  .lambda();
+    .addRequestHandlers(
+      LaunchRequestHandler,
+      HelpRequestHandler,
+      EventHandler,
+      CancelIntentHandler,
+      DealsRequestHandler,
+      YesDealsRequestHandler,
+      BuyDealsRequestHandler,
+      FallbackHandler,
+      ShapeRequestHandler,
+      SessionEndedRequestHandler
+    )
+    .withApiClient(new Alexa.DefaultApiClient())
+    .lambda();

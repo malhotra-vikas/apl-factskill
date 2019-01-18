@@ -12,6 +12,7 @@ module.exports = (handlerInput, speak = true) => {
     }
   }
   attributes.lastItem = shape.name;
+  attributes.landingURL = shape.landingURL;
   handlerInput.attributesManager.setSessionAttributes(attributes);
   
   let speech = shape.description + ' ' + skill.reprompt;
