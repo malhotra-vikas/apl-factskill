@@ -25,7 +25,7 @@ module.exports = {
 
         var sender = new Sender(config);
         /* Send direct sms */
-        sender.sendSms('Here is today\'s steal - : ' + attributes.landingURL , 'Today\'s Deal', false, '+1'+attributes.PhoneNumber)
+        sender.sendSms('Here is today\'s steal - : ' + attributes.landingURL , 'Today\'s Steal', false, '+1'+attributes.PhoneNumber)
             .then(function (response) {
                 console.log(response);
             })
@@ -37,12 +37,14 @@ module.exports = {
         if (handlerInput.requestEnvelope.context.System.device.supportedInterfaces['Alexa.Presentation.APL']) {
             return handlerInput.responseBuilder
                 .addDirective(LaunchDirective())
-                .speak('Thanks for using the skill. You will recieve a text with the link for the deal shortly. Please come back again to see the next amazing deal')
+                .speak('Thanks for using the Steal of the Week. You will receive a text with the link for the deal shortly. ' +
+                    'Please come back again to hear a great steal. Please rate the skill at Amazon Skill Store.')
                 .withShouldEndSession(true)
                 .getResponse();
         } else {
             return handlerInput.responseBuilder
-                .speak('Thanks for using the skill. You will recieve a text with the link for the deal shortly. Please come back again to see the next amazing deal')
+                .speak('Thanks for using the Steal of the Week. You will receive a text with the link for the deal shortly. ' +
+                    'Please come back again to hear a great steal.  Please rate the skill at Amazon Skill Store.')
                 .withShouldEndSession(true)
                 .getResponse();
         }

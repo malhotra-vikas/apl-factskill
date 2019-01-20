@@ -8,8 +8,6 @@ module.exports = {
   async handle(handlerInput) {
 
       const messages = {
-          WELCOME: 'Welcome to the Sample Alexa Customer Profile API Skill! You can ask for your name, your email address, or your phone number. What do you want to ask?',
-          WHAT_DO_YOU_WANT: 'What do you want to ask?',
           NOTIFY_MISSING_PERMISSIONS: 'I need to know your phone number in order to text you the deals. Please enable permissions in the Amazon Alexa app.',
           NAME_MISSING: 'You can set your name either in the Alexa app under calling and messaging, or you can set it at Amazon.com, under log-in and security.',
           EMAIL_MISSING: 'You can set your email at Amazon.com, under log-in and security.',
@@ -65,13 +63,13 @@ module.exports = {
               if (handlerInput.requestEnvelope.context.System.device.supportedInterfaces['Alexa.Presentation.APL']) {
                   return handlerInput.responseBuilder
                       .addDirective(LaunchDirective())
-                      .speak(skill.welcome +' Do you want to see a deal?.')
+                      .speak(skill.welcome +' Would you like to hear a great steal?')
                       .reprompt(skill.hint)
                       .withShouldEndSession(false)
                       .getResponse();
               } else {
                   return handlerInput.responseBuilder
-                      .speak(skill.welcome + ' Do you want to see a deal?')
+                      .speak(skill.welcome + ' Would you like to hear a great steal??')
                       .reprompt(skill.hint)
                       .withShouldEndSession(false)
                       .getResponse();

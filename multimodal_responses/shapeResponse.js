@@ -15,7 +15,7 @@ module.exports = (handlerInput, speak = true) => {
   attributes.landingURL = shape.landingURL;
   handlerInput.attributesManager.setSessionAttributes(attributes);
   
-  let speech = shape.description + ' ' + skill.reprompt;
+  let speech = 'You can buy ' + shape.name + ' at ' + shape.Price + '. ' + skill.buy;
   if (handlerInput.requestEnvelope.context.System.device.supportedInterfaces['Alexa.Presentation.APL']) {
     return handlerInput.responseBuilder
       .addDirective(ShapeDirective(shape))

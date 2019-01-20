@@ -182,6 +182,7 @@ module.exports = () => {
                             "type": "Container",
                             "items": [
                                 {
+                                    "when": "${viewport.shape != 'round'}",
                                     "type": "Image",
                                     "source": "${payload.data.properties.backgroundImage.sources[0].url}",
                                     "scale": "best-fill",
@@ -223,24 +224,24 @@ module.exports = () => {
             "data": {
                 "type": "object",
                 properties: {
-                    "title": skill.title,
+                    "title": skill.title_display,
                     "backgroundImage": {
                         "contentDescription": null,
-                        "smallSourceUrl": null,
-                        "largeSourceUrl": null,
+                        "smallSourceUrl": skill.background,
+                        "largeSourceUrl": skill.background,
                         "sources": [
                             {
                                 "url": skill.background,
                                 "size": "large",
                                 "widthPixels": 0,
                                 "heightPixels": 0
-                            },
+                            }/*,
                             {
                                 "url": skill.background,
                                 "size": "small",
                                 "widthPixels": 0,
                                 "heightPixels": 0
-                            }
+                            }*/
                         ]
                     },
                     "image": {
