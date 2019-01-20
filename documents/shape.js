@@ -42,8 +42,8 @@ module.exports = (shape) => {
                 {
                     "description": "Standard font sizes",
                     "dimensions": {
-                        "textSizeBody": 48,
-                        "textSizePrimary": 27,
+                        "textSizeBody": 20,
+                        "textSizePrimary": 15,
                         "textSizeSecondary": 23,
                         "textSizeSecondaryHint": 25
                     }
@@ -89,7 +89,8 @@ module.exports = (shape) => {
                     "description": "Light version of basic font",
                     "extend": "textStyleBase",
                     "values": {
-                        "fontWeight": "300"
+                        "fontWeight": "300",
+                        "color": "#2ca32f"
                     }
                 },
                 "mixinBody": {
@@ -146,7 +147,8 @@ module.exports = (shape) => {
                             "type": "SendEvent",
                             "arguments": ["startEvent"]
                         },
-                        items: [{
+                        items: [
+                            {
                             "when": "${viewport.shape == 'round'}",
                             "type": "Container",
                             "direction": "column",
@@ -163,15 +165,6 @@ module.exports = (shape) => {
                                     "width": "100vw",
                                     "height": "100vh"
                                 },
-                                // {
-                                //     "type": "Image",
-                                //     "source": "${payload.data.properties.image.sources[0].url}",
-                                //     "scale": "best-fit",
-                                //     "width": "60vw",
-                                //     "height": "60vh",
-                                //     "position": "absolute",
-                                //     "overlayColor": "rgba(0, 0, 0, 1)"
-                                // },
                                 {
                                     "type": "ScrollView",
                                     "width": "100vw",
@@ -183,18 +176,18 @@ module.exports = (shape) => {
                                             "alignItems": "center",
                                             "paddingLeft": 40,
                                             "paddingRight": 40,
-                                            "paddingBottom": 200,
+                                            "paddingTop": 10,
+                                            "paddingBottom": 5,
                                             "items": [
                                                 {
                                                     "type": "AlexaHeader",
-//                                            "headerAttributionImage": "${payload.data.properties.logoUrl}",
-//                                            "headerTitle": "${payload.data.properties.title}"
                                                 },
                                                 {
                                                     "type": "Text",
                                                     "text": "<b>${payload.data.properties.textContent.title.text}</b>",
                                                     "style": "textStyleBody",
                                                     "width": "90vw",
+                                                    "paddingTop": 70,
                                                     "textAlign": "center"
                                                 },
                                                 {
@@ -207,7 +200,7 @@ module.exports = (shape) => {
                                                 {
                                                     "type": "Text",
                                                     "text": "${payload.data.properties.textContent.primaryText.text}",
-                                                    "paddingTop": 10,
+                                                    "paddingTop": 100,
                                                     "style": "textStylePrimary",
                                                     "width": "90vw",
                                                     "textAlign": "center"
@@ -215,9 +208,10 @@ module.exports = (shape) => {
                                                 {
                                                     "type": "Image",
                                                     "source": "${payload.data.properties.image.sources[0].url}",
+                                                    "paddingBottom": 150,
                                                     "scale": "best-fit",
-                                                    "width": "20vw",
-                                                    "height": "15vh",
+                                                    "width": "40vw",
+                                                    "height": "30vh",
                                                     "position": "absolute",
                                                 },
                                             ]
@@ -334,7 +328,7 @@ module.exports = (shape) => {
                             }
                         ]
                     },
-                    "title": skill.title,
+                    "title": skill.title_display,
                     "image": {
                         "sources": [
                             {
