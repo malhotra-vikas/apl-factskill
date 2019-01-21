@@ -153,7 +153,8 @@ module.exports = () => {
                                     "scale": "best-fill",
                                     "position": "absolute",
                                     "width": "100vw",
-                                    "height": "100vh"
+                                    "height": "100vh",
+                                    "align": "center"
                                 },
                                 {
                                     "type": "AlexaHeader",
@@ -188,7 +189,8 @@ module.exports = () => {
                                     "scale": "best-fill",
                                     "position": "absolute",
                                     "width": "100vw",
-                                    "height": "100vh"
+                                    "height": "100vh",
+                                    "align": "center"
                                 },
                                 {
                                     "type": "AlexaHeader",
@@ -206,8 +208,8 @@ module.exports = () => {
                                     "items": [
                                         {
                                             "type": "Image",
-                                            "height": "80vh",
-                                            "width": "90vw",
+                                            "height": "100vh",
+                                            "width": "100vw",
                                             "source": "${payload.data.properties.image.sources[0].url}",
                                             "scale": "best-fill",
                                             "align": "center"
@@ -227,11 +229,11 @@ module.exports = () => {
                     "title": skill.title_display,
                     "backgroundImage": {
                         "contentDescription": null,
-                        "smallSourceUrl": skill.background,
-                        "largeSourceUrl": skill.background,
+                        "smallSourceUrl": skill.bg,
+                        "largeSourceUrl": skill.bg,
                         "sources": [
                             {
-                                "url": skill.background,
+                                "url": skill.bg,
                                 "size": "large",
                                 "widthPixels": 0,
                                 "heightPixels": 0
@@ -250,13 +252,13 @@ module.exports = () => {
                         "largeSourceUrl": null,
                         "sources": [
                             {
-//                            "url": skill.startImage,
+                            "url": skill.transparentbackground,
                                 "size": "large",
                                 "widthPixels": 0,
                                 "heightPixels": 0
                             },
                             {
-//                            "url": skill.startImage,
+                            "url": skill.transparentbackground,
                                 "size": "small",
                                 "widthPixels": 0,
                                 "heightPixels": 0
