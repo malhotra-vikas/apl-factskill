@@ -168,7 +168,7 @@ module.exports = (shape) => {
                                         {
                                             "type": "Image",
                                             "source": "${payload.data.properties.backgroundImage.sources[0].url}",
-                                            "scale": "best-fill",
+                                            "scale": "best-fit",
                                             "position": "absolute",
                                             "width": "100vw",
                                             "height": "100vh"
@@ -182,9 +182,9 @@ module.exports = (shape) => {
                                                     "type": "Container",
                                                     "direction": "column",
                                                     "alignItems": "center",
-                                                    "paddingLeft": 40,
-                                                    "paddingRight": 40,
-                                                    "paddingTop": 40,
+                                                    "paddingLeft": 10,
+                                                    "paddingRight": 10,
+                                                    "paddingTop": 25,
                                                     "paddingBottom": 5,
                                                     "items": [
                                                         {
@@ -193,9 +193,9 @@ module.exports = (shape) => {
                                                         {
                                                             "type": "Image",
                                                             "source": "${payload.data.properties.image.sources[0].url}",
-                                                            "paddingBottom": 150,
+                                                            "paddingBottom": 80,
                                                             "scale": "best-fit",
-                                                            "width": "60vw",
+                                                            "width": "40vw",
                                                             "height": "40vh",
                                                             "position": "absolute"
                                                         },
@@ -205,7 +205,7 @@ module.exports = (shape) => {
                                                             "text": "<b>${payload.data.properties.textContent.title.text}</b>",
                                                             "style": "textStyleBody",
                                                             "width": "90vw",
-                                                            "paddingTop": 120,
+                                                            "paddingTop": 110,
                                                             "textAlign": "center"
                                                         },
                                                         {
@@ -354,15 +354,7 @@ module.exports = (shape) => {
                         "sources": [
                             {
                                 "url": shape.image,
-                                "size": "small",
-                                "widthPixels": 0,
-                                "heightPixels": 0
-                            },
-                            {
-                                "url": shape.image,
-                                "size": "large",
-                                "widthPixels": 0,
-                                "heightPixels": 0
+                                "size": "small"
                             }
                         ]
                     },

@@ -150,7 +150,7 @@ module.exports = () => {
                                     {
                                         "type": "Image",
                                         "source": "${payload.data.properties.backgroundImage.sources[0].url}",
-                                        "scale": "best-fill",
+                                        "scale": "best-fit",
                                         "position": "absolute",
                                         "width": "100vw",
                                         "height": "100vh",
@@ -165,7 +165,7 @@ module.exports = () => {
                                         "when": "${@viewportProfile == @hubRoundSmall}",
                                         "type": "Image",
                                         "source": "${payload.data.properties.backgroundImage.sources[0].url}",
-                                        "scale": "best-fill",
+                                        "scale": "best-fit",
                                         "position": "absolute",
                                         "width": "100vw",
                                         "height": "100vh",
@@ -175,7 +175,7 @@ module.exports = () => {
                                         "when": "${@viewportProfile != @hubRoundSmall}",
                                         "type": "Image",
                                         "source": "${payload.data.properties.backgroundImage.sources[0].url}",
-                                        "scale": "best-fill",
+                                        "scale": "best-fit",
                                         "position": "absolute",
                                         "width": "100vw",
                                         "height": "100vh"
@@ -195,7 +195,7 @@ module.exports = () => {
                                                 "height": "100vh",
                                                 "width": "100vw",
                                                 "source": "${payload.data.properties.image.sources[0].url}",
-                                                "scale": "best-fill",
+                                                "scale": "best-fit",
                                                 "align": "center"
                                             },
                                             {
