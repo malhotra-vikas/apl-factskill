@@ -23,14 +23,14 @@ module.exports = () => {
                     {
                         "description": "Stock color for the light theme",
                         "colors": {
-                            "colorTextPrimary": "#eef0f0"
+                            "colorTextPrimary": "#414141"
                         }
                     },
                     {
                         "description": "Stock color for the dark theme",
                         "when": "${viewport.theme == 'dark'}",
                         "colors": {
-                            "colorTextPrimary": "#eef0f0"
+                            "colorTextPrimary": "#414141"
                         }
                     },
                     {
@@ -68,7 +68,7 @@ module.exports = () => {
                         "values": [
                             {
                                 "color": "@colorTextPrimary",
-                                "fontFamily": "Amazon Ember"
+                                "fontFamily": "Oswald"
                             }
                         ]
                     },
@@ -121,7 +121,7 @@ module.exports = () => {
                     },
                     "textStyleSecondaryHint": {
                         "values": {
-                            "fontFamily": "Bookerly",
+                            "fontFamily": "Oswald",
                             "fontStyle": "italic",
                             "fontSize": "@textSizeSecondaryHint",
                             "color": "@colorTextPrimary"
@@ -222,11 +222,11 @@ module.exports = () => {
                         "title": "                 ",
                         "backgroundImage": {
                             "contentDescription": null,
-                            "smallSourceUrl": "https://s3.amazonaws.com/dealsskillassets/water-1330252_960_720.jpg",
-                            "largeSourceUrl": "https://s3.amazonaws.com/dealsskillassets/water-1330252_960_720.jpg",
+                            "smallSourceUrl": "https://s3.amazonaws.com/dealsskillassets/Backgrounds_1360x1040-03.png",
+                            "largeSourceUrl": "https://s3.amazonaws.com/dealsskillassets/Backgrounds_1360x1040-03.png",
                             "sources": [
                                 {
-                                    "url": "https://s3.amazonaws.com/dealsskillassets/water-1330252_960_720.jpg",
+                                    "url": "https://s3.amazonaws.com/dealsskillassets/Backgrounds_1360x1040-03.png",
                                     "size": "large",
                                     "widthPixels": 0,
                                     "heightPixels": 0
@@ -275,6 +275,5 @@ module.exports = () => {
                     }
                 }
             }
-
     }
     };
