@@ -140,46 +140,12 @@ module.exports = () => {
                         "inheritParentState": true,
                         "onPress": {
                             "type": "SendEvent",
-                            "arguments": ["startEvent"]
+                            "arguments": ["next steal"]
                         },
                         "items": [
                             {
                                 "type": "Container",
-                                "direction": "column",
                                 "items": [
-                                    {
-                                        "type": "Image",
-                                        "source": "${payload.data.properties.backgroundImage.sources[0].url}",
-                                        "scale": "best-fit",
-                                        "position": "absolute",
-                                        "width": "100vw",
-                                        "height": "100vh",
-                                        "align": "center"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "Container",
-                                "items": [
-                                    {
-                                        "when": "${@viewportProfile == @hubRoundSmall}",
-                                        "type": "Image",
-                                        "source": "${payload.data.properties.backgroundImage.sources[0].url}",
-                                        "scale": "best-fit",
-                                        "position": "absolute",
-                                        "width": "100vw",
-                                        "height": "100vh",
-                                        "align": "center"
-                                    },
-                                    {
-                                        "when": "${@viewportProfile != @hubRoundSmall}",
-                                        "type": "Image",
-                                        "source": "${payload.data.properties.backgroundImage.sources[0].url}",
-                                        "scale": "best-fit",
-                                        "position": "absolute",
-                                        "width": "100vw",
-                                        "height": "100vh"
-                                    },
                                     {
                                         "type": "Container",
                                         "direction": "row",
@@ -194,7 +160,7 @@ module.exports = () => {
                                                 "type": "Image",
                                                 "height": "100vh",
                                                 "width": "100vw",
-                                                "source": "${payload.data.properties.image.sources[0].url}",
+                                                "source": "https://s3.amazonaws.com/dealsskillassets/2134_main.png",
                                                 "scale": "best-fit",
                                                 "align": "center"
                                             },
@@ -203,7 +169,7 @@ module.exports = () => {
                                                 "type": "Image",
                                                 "height": "100vh",
                                                 "width": "100vw",
-                                                "source": "${payload.data.properties.image.sources[0].url}",
+                                                "source": "https://s3.amazonaws.com/dealsskillassets/2134_main.png",
                                                 "align": "center"
                                             }
                                         ]

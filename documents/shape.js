@@ -146,7 +146,7 @@ module.exports = (shape) => {
                             "type": "TouchWrapper",
                             "onPress": {
                                 "type": "SendEvent",
-                                "arguments": ["startEvent"]
+                                "arguments": ["next steal"]
                             },
                             "items": [
                                 {
@@ -159,7 +159,7 @@ module.exports = (shape) => {
                                     "items": [
                                         {
                                             "type": "Image",
-                                            "source": "${payload.data.properties.trueBackgroundImage.sources[0].url}",
+                                            "source": "https://s3.amazonaws.com/dealsskillassets/Backgrounds_1360x1040-03.png",
                                             "scale": "best-fill",
                                             "position": "absolute",
                                             "width": "100vw",
@@ -167,7 +167,7 @@ module.exports = (shape) => {
                                         },
                                         {
                                             "type": "Image",
-                                            "source": "${payload.data.properties.backgroundImage.sources[0].url}",
+                                            "source": "https://s3.amazonaws.com/dealsskillassets/1360x1040_Transparent-deal.png",
                                             "scale": "best-fit",
                                             "position": "absolute",
                                             "width": "100vw",
@@ -193,7 +193,7 @@ module.exports = (shape) => {
                                                         {
                                                             "type": "Image",
                                                             "source": "${payload.data.properties.image.sources[0].url}",
-                                                            "paddingBottom": 80,
+                                                            "paddingBottom": 70,
                                                             "scale": "best-fit",
                                                             "width": "40vw",
                                                             "height": "40vh",
@@ -205,7 +205,7 @@ module.exports = (shape) => {
                                                             "text": "<b>${payload.data.properties.textContent.title.text}</b>",
                                                             "style": "textStyleBody",
                                                             "width": "90vw",
-                                                            "paddingTop": 110,
+                                                            "paddingTop": 85,
                                                             "textAlign": "center"
                                                         },
                                                         {
@@ -239,73 +239,8 @@ module.exports = (shape) => {
                                             ]
                                         }
                                     ]
-                                },
-                                {
-                                    "type": "Container",
-                                    "width": "100vw",
-                                    "height": "100vh",
-                                    "direction": "column",
-                                    "alignItems": "center",
-                                    "justifyContent": "center",
-                                    "items": [
-                                        {
-                                            "type": "Image",
-                                            "source": "${payload.data.properties.backgroundImage.sources[0].url}",
-                                            "scale": "best-fill",
-                                            "width": "100vw",
-                                            "height": "100vh",
-                                            "position": "absolute"
-                                        },
-                                        {
-                                            "type": "AlexaHeader",
-                                            "headerTitle": "${payload.data.properties.title}"
-                                        },
-                                        {
-                                            "type": "Container",
-                                            "direction": "row",
-                                            "paddingLeft": 40,
-                                            "paddingRight": 72,
-                                            "grow": 1,
-                                            "items": [
-                                                {
-                                                    "type": "Image",
-                                                    "source": "${payload.data.properties.image.sources[0].url}",
-                                                    "width": 340,
-                                                    "height": 360,
-                                                    "scale": "best-fit",
-                                                    "align": "center"
-                                                },
-                                                {
-                                                    "type": "ScrollView",
-                                                    "height": "60vh",
-                                                    "shrink": 1,
-                                                    "item": [
-                                                        {
-                                                            "type": "Container",
-                                                            "items": [
-                                                                {
-                                                                    "type": "Text",
-                                                                    "text": "${payload.data.properties.textContent.title.text}",
-                                                                    "style": "textStyleBody"
-                                                                },
-                                                                {
-                                                                    "type": "Text",
-                                                                    "text": "${payload.data.properties.textContent.subtitle.text}",
-                                                                    "style": "textStylePrimary"
-                                                                },
-                                                                {
-                                                                    "type": "Text",
-                                                                    "text": "${payload.data.properties.textContent.primaryText.text}",
-                                                                    "style": "textStylePrimary"
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
                                 }
+
                             ]
                         }]
                 }
