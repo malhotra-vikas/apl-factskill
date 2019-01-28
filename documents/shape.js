@@ -37,7 +37,7 @@ module.exports = (shape) => {
                         "description": "Stock color for the dark theme",
                         "when": "${viewport.theme == 'dark'}",
                         "colors": {
-                            "colorTextPrimary": "#414141"
+                            "colorTextPrimary": "#ffffff"
                         }
                     },
                     {
@@ -91,7 +91,7 @@ module.exports = (shape) => {
                         "extend": "textStyleBase",
                         "values": {
                             "fontWeight": "300",
-                            "color": "#414141"
+                            "color": "@colorTextPrimary"
                         }
                     },
                     "mixinBody": {
@@ -159,15 +159,7 @@ module.exports = (shape) => {
                                     "items": [
                                         {
                                             "type": "Image",
-                                            "source": "https://s3.amazonaws.com/dealsskillassets/Backgrounds_1360x1040-03.png",
-                                            "scale": "best-fill",
-                                            "position": "absolute",
-                                            "width": "100vw",
-                                            "height": "100vh"
-                                        },
-                                        {
-                                            "type": "Image",
-                                            "source": "https://s3.amazonaws.com/dealsskillassets/1360x1040_Transparent-deal.png",
+                                            "source": "https://d2k65kuhsvmpth.cloudfront.net/deal_background.jpg",
                                             "scale": "best-fit",
                                             "position": "absolute",
                                             "width": "100vw",
@@ -255,13 +247,13 @@ module.exports = (shape) => {
                         "largeSourceUrl": null,
                         "sources": [
                             {
-                                "url": "https://s3.amazonaws.com/dealsskillassets/Backgrounds_1360x1040-03.png",
+                                "url": "https://d2k65kuhsvmpth.cloudfront.net/Backgrounds_1360x1040-03.png",
                                 "size": "small",
                                 "widthPixels": 0,
                                 "heightPixels": 0
                             },
                             {
-                                "url": "https://s3.amazonaws.com/dealsskillassets/Backgrounds_1360x1040-03.png",
+                                "url": "https://d2k65kuhsvmpth.cloudfront.net/Backgrounds_1360x1040-03.png",
                                 "size": "large",
                                 "widthPixels": 0,
                                 "heightPixels": 0
@@ -271,13 +263,13 @@ module.exports = (shape) => {
                     "backgroundImage": {
                         "sources": [
                             {
-                                "url": "https://s3.amazonaws.com/dealsskillassets/1360x1040_Transparent-deal.png",
+                                "url": "https://d2k65kuhsvmpth.cloudfront.net/deal_background.jpg",
                                 "size": "small",
                                 "widthPixels": 0,
                                 "heightPixels": 0
                             },
                             {
-                                "url": "https://s3.amazonaws.com/dealsskillassets/1360x1040_Transparent-deal.png",
+                                "url": "https://d2k65kuhsvmpth.cloudfront.net/deal_background.jpg",
                                 "size": "large",
                                 "widthPixels": 0,
                                 "heightPixels": 0

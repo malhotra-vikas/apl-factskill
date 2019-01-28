@@ -160,7 +160,7 @@ module.exports = () => {
                                                 "type": "Image",
                                                 "height": "100vh",
                                                 "width": "100vw",
-                                                "source": "https://s3.amazonaws.com/dealsskillassets/2134_main.png",
+                                                "source": "https://d2k65kuhsvmpth.cloudfront.net/2134_main.png",
                                                 "scale": "best-fit",
                                                 "align": "center"
                                             },
@@ -169,7 +169,7 @@ module.exports = () => {
                                                 "type": "Image",
                                                 "height": "100vh",
                                                 "width": "100vw",
-                                                "source": "https://s3.amazonaws.com/dealsskillassets/2134_main.png",
+                                                "source": "https://d2k65kuhsvmpth.cloudfront.net/2134_main.png",
                                                 "align": "center"
                                             }
                                         ]
@@ -188,11 +188,11 @@ module.exports = () => {
                         "title": "                 ",
                         "backgroundImage": {
                             "contentDescription": null,
-                            "smallSourceUrl": "https://s3.amazonaws.com/dealsskillassets/Backgrounds_1360x1040-03.png",
-                            "largeSourceUrl": "https://s3.amazonaws.com/dealsskillassets/Backgrounds_1360x1040-03.png",
+                            "smallSourceUrl": "https://d2k65kuhsvmpth.cloudfront.net/Backgrounds_1360x1040-03.png",
+                            "largeSourceUrl": "https://d2k65kuhsvmpth.cloudfront.net/Backgrounds_1360x1040-03.png",
                             "sources": [
                                 {
-                                    "url": "https://s3.amazonaws.com/dealsskillassets/Backgrounds_1360x1040-03.png",
+                                    "url": "https://d2k65kuhsvmpth.cloudfront.net/Backgrounds_1360x1040-03.png",
                                     "size": "large",
                                     "widthPixels": 0,
                                     "heightPixels": 0
@@ -205,13 +205,13 @@ module.exports = () => {
                             "largeSourceUrl": null,
                             "sources": [
                                 {
-                                    "url": "https://s3.amazonaws.com/dealsskillassets/1360x1040_Transparent-main.png",
+                                    "url": "https://d2k65kuhsvmpth.cloudfront.net/1360x1040_Transparent-main.png",
                                     "size": "large",
                                     "widthPixels": 0,
                                     "heightPixels": 0
                                 },
                                 {
-                                    "url": "https://s3.amazonaws.com/dealsskillassets/255x195_Transparent-main.png",
+                                    "url": "https://d2k65kuhsvmpth.cloudfront.net/255x195_Transparent-main.png",
                                     "size": "small",
                                     "widthPixels": 0,
                                     "heightPixels": 0
@@ -224,13 +224,13 @@ module.exports = () => {
                             "largeSourceUrl": null,
                             "sources": [
                                 {
-                                    "url": "https://s3.amazonaws.com/dealsskillassets/2134_main.png",
+                                    "url": "https://d2k65kuhsvmpth.cloudfront.net/2134_main.png",
                                     "size": "large",
                                     "widthPixels": 0,
                                     "heightPixels": 0
                                 },
                                 {
-                                    "url": "https://s3.amazonaws.com/dealsskillassets/2134_main.png",
+                                    "url": "https://d2k65kuhsvmpth.cloudfront.net/2134_main.png",
                                     "size": "small",
                                     "widthPixels": 0,
                                     "heightPixels": 0
