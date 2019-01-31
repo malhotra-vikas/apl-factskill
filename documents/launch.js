@@ -169,7 +169,7 @@ module.exports = () => {
                                                 "type": "Image",
                                                 "height": "100vh",
                                                 "width": "100vw",
-                                                "source": "https://d2k65kuhsvmpth.cloudfront.net/2134_main.png",
+                                                "source": "https://d2k65kuhsvmpth.cloudfront.net/255x195_Transparent-main.png",
                                                 "align": "center"
                                             }
                                         ]

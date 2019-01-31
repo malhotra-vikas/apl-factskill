@@ -158,8 +158,18 @@ module.exports = (shape) => {
                                     "justifyContent": "center",
                                     "items": [
                                         {
+                                            "when": "${@viewportProfile == @hubRoundSmall}",
                                             "type": "Image",
                                             "source": "https://d2k65kuhsvmpth.cloudfront.net/deal_background.jpg",
+                                            "scale": "best-fit",
+                                            "position": "absolute",
+                                            "width": "100vw",
+                                            "height": "100vh"
+                                        },
+                                        {
+                                            "when": "${@viewportProfile != @hubRoundSmall}",
+                                            "type": "Image",
+                                            "source": "https://d2k65kuhsvmpth.cloudfront.net/255x195_Transparent-deal.png",
                                             "scale": "best-fit",
                                             "position": "absolute",
                                             "width": "100vw",
@@ -187,6 +197,7 @@ module.exports = (shape) => {
                                                             "source": "${payload.data.properties.image.sources[0].url}",
                                                             "paddingBottom": 70,
                                                             "scale": "best-fit",
+                                                            "paddingTop": 25,
                                                             "width": "40vw",
                                                             "height": "40vh",
                                                             "position": "absolute"
